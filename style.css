@@ -280,6 +280,47 @@ section{
 }
 
 
+#contact{
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+}
+#contact h2{
+  color: var(--other-color);
+  font-size: var(--h2-font);
+  margin-bottom: 40px;
+}
+#contact ul li{
+  margin: 20px 0;
+  color: var(--other-color);
+  font-size: var(--h3-font);
+}
+form label{
+  color: var(--other-color);
+}
+#contact form input, #contact form textarea{
+  display: block;
+  width: 500px;
+  background: var(--bg-about);
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+  color: var(--other-color);
+}
+#contact button{
+  display: inline-block;
+  padding: 15px 28px;
+  background: var(--other-color);
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
 
 
 .last_row{

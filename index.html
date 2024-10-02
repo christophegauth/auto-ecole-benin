@@ -144,21 +144,35 @@
       </div>
     </section>
 
-    <section class="last_row">
-      <div>
-        <h3>Contactez-nous</h3>
+    <!-- formulaire de contact -->
+    <section id='contact'>
+      <div className='contact-col'>
+        <h2>CONTACTEZ-NOUS</h2>
         <ul>
-          <li>
-            <a href="index.html">1271 Quasutone Rd, Cotonou</a>
-          </li>
-          <li>
-            <a href="">+229 23-37-28-83</a>
-          </li>
-          <li>
-            <a href="">hello@beninautoecole.com</a>
-          </li>
+          <li><img src=""alt='' /> contact@beninautoecole.com</li>
+          <li><img src="" alt='' />+229 57083133</li>
+          <li><img src="" alt='' />AGLA, COTONOU<br/> Benin</li>
         </ul>
       </div>
+      <div className='contact-col'>
+        <form>
+          <label>Nom</label>
+          <input type='text' name='name' placeholder='Entrez votre nom' required />
+          <label>Numéro</label>
+          <input 
+            type='tel' 
+            name='phone' 
+            placeholder='Entrez votre numéro de téléphone' 
+            required
+          />
+          <label>Message</label>
+          <textarea name='message' rows='6' placeholder='Saisissez votre message...' required></textarea>
+          <button type='submit'>Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="last_row">
       <div>
         <h3>Heures d'ouverture</h3>
         <ul>
@@ -190,7 +204,7 @@
       <div class="col_last">
         <h3>Abonnez-vous à notre newsletter</h3>
         <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing</p>
-        <form action="submit.php" method="post" onsubmit="return validateEmail()">
+        <form>
           <input type="email" name="email" placeholder="Votre email" id="email" required>
             <input type="submit" name="" value="Soumettre" class="send">
         </form>
