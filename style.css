@@ -30,7 +30,7 @@ nav{
   position: fixed;
   top: 0;
   right: 0;
-  padding: 20px 8%;
+  padding: 20px 4%;
   width: 100%;
   z-index: 1000;
   display: flex;
@@ -38,16 +38,22 @@ nav{
   justify-content: space-between;
   transition: all .6s ease;
 }
+nav.sticky{
+  padding: 5px 4%;
+  background: var(--bg-color);
+  backdrop-filter: blur(25px);
+}
 .logo img{
   max-width: 20%;
   object-fit: contain;
 }
 .menulist a{
   display: inline-block;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 600;
   color: var(--text-color);
   margin: 0 30px;
+  transition: all .6s ease;
 }
 .menulist a.active{
   color: var(--text-color);
@@ -151,6 +157,7 @@ section{
   font-size: var(--h2-font);
   text-align: center;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 .about-text p{
   font-size: var(--p-font);
@@ -166,6 +173,7 @@ section{
   flex-basis: 40%;
   color: var(--other-color);
   font-size: var(--h2-font);
+  text-transform: capitalize;
 }
 .services-text{
   flex-basis: 60%;
@@ -254,6 +262,7 @@ section{
   font-size: var(--h2-font);
   max-width: 430px;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 .fonctionnement-text p{
   font-size: var(--p-font);
@@ -280,8 +289,81 @@ section{
 }
 
 
+.testimonials{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+.testimonials .wrapper{
+  width: 100%;
+  padding: 0 15px;
+}
+.wrapper .section-header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-header .title{
+  font-size: var(--h2-font);
+  font-weight: 600px;
+  color: var(--text-color);
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+.wrapper .testimonial-item{
+  background: var(--other-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.testimonial-item .info{
+  display: flex;
+  align-items: center;
+}
+.info img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.info .name{
+  font-size: var(--h3-font);
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.info .job{
+  text-transform: capitalize;
+}
+.testimonial-item p{
+  margin-top: 15px;
+  font-size: var(--p-services);
+}
+.testimonial-item .rating{
+  margin-top: 15px;
+  font-size: 14px;
+  color: goldenrod;
+}
+.testimonials .swiper-pagination{
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+.testimonials .swiper-pagination-bullet{
+  width: 18px;
+  height: 18px;
+  background: #fff;
+}
+
+
+
+
+
+
+
+
 #contact{
-  background-color: var(--text-color);
+  background-color: var(--bg-about);
   display: flex;
   justify-content: space-between;
 }
@@ -297,12 +379,14 @@ section{
 }
 form label{
   color: var(--other-color);
+  font-size: 1.2rem;
 }
 #contact form input, #contact form textarea{
   display: block;
   width: 500px;
-  background: var(--bg-about);
+  background: var(--text-color);
   padding: 15px;
+  font-size: 1.2rem;
   border: 0;
   outline: 0;
   margin-bottom: 15px;
