@@ -549,7 +549,7 @@ form .send{
     --h2-font: 1.5rem;
     --h3-font: 1rem;
     --p-font: 1.2rem;
-    --p-services: 1rem;
+    --p-services: 0.8rem;
   }
   .home{
     height: 100vh;
